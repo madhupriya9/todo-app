@@ -1,0 +1,101 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: pink;
+  }
+  
+  .container {
+    width: 400px;
+    max-width: 540px;
+    background: #0056b3;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  h1 {
+    color: #002765;
+    text-align: center;
+  }
+  
+  .input-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .input-section input {
+    flex: 1;
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  
+  .input-section button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+  .input-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  #taskList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .task-item:last-child {
+    border-bottom: none;
+  }
+  
+  .task-item .task-text {
+    flex: 1;
+  }
+  
+  .task-item .delete-btn {
+    color: #ff0000;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .card {
+    background-color: aquamarine;
+  }
+  
+  /* Add the following rule to create a pink background behind the aqua green card */
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-color: pink;
+    z-index: -1;
+    border-radius: 10px;
+  }
+   
